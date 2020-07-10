@@ -11,6 +11,9 @@ import UIKit
 class ResultsViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
+    var result : Double = 0.0
+    var tip : Int  = 0
+    var split : Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,10 @@ class ResultsViewController: UIViewController {
     }
     
     @IBAction func recalculatePressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
+    
+
     
     /*
     // MARK: - Navigation
